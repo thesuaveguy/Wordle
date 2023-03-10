@@ -23,7 +23,7 @@ export default function Wordle({solution}) {
           window.removeEventListener('keyup',handleKeyup);
         }
         if(turn>5 && !isCorrect){
-          console.log('out of guesses')
+          // console.log('out of guesses')
           setTimeout(()=>setShowModal(true),2000)
           window.removeEventListener('keyup',handleKeyup);
         }

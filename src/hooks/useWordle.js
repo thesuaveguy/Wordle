@@ -86,7 +86,7 @@ const useWordle = (solution) => {
 
     //handle keyup event & track current guess
     const handleKeyup=({key,keyCode})=>{
-      console.log(key)
+      // console.log(key)
       if(key==="Enter"){
         //no duplicate words turn<=6 and length==5
        if(turn>=6){
