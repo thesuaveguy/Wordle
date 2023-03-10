@@ -12,7 +12,7 @@ const Row = ({prevGuess,currentGuess,isCorrect}) => {
     }
     if(currentGuess&&!isCorrect){
         let letters=currentGuess.split('');
-        console.log(isCorrect)
+        // console.log(isCorrect)
         return(
             <div className="row current">
                { letters.map((letter,index)=>(
