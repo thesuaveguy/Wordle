@@ -90,20 +90,20 @@ const useWordle = (solution) => {
       if(key==="Enter"){
         //no duplicate words turn<=6 and length==5
        if(turn>=6){
-        console.log('You have exhausted all your guesses')
+        // console.log('You have exhausted all your guesses')
         return;
        }
        if(history.includes(currentGuess)){
-        console.log(`You already entered ${currentGuess}`)
+        // console.log(`You already entered ${currentGuess}`)
         // setCurrentGuess('')
         return;
       }
       if(currentGuess.length<5){
-        console.log('Word must be 5 characters long')
+        // console.log('Word must be 5 characters long')
         return;
       }
       if(!dictionary.includes(currentGuess)){
-        console.log('No such word exists')
+        // console.log('No such word exists')
         setIsValidGuess(false)
         // setCurrentGuess('')
         return;

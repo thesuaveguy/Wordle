@@ -9,11 +9,6 @@ const Modal = ({isCorrect,turn,solution,isValidGuess}) => {
         <h5 className='solution'>Not in word list</h5>
       </div>
     )}
-    {/* { !isValidGuess && removeModal()} */}
-
-      
-    
-     
     {isValidGuess&&isCorrect && (
         <div>
             <h1>You win</h1>

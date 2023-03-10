@@ -6,8 +6,8 @@ const App=()=> {
     const [solution,setSolution]=useState(null);
     useEffect(()=>{
         const randomSolution=dictionary[Math.floor(Math.random()*dictionary.length)];
-        console.log(randomSolution)
-        console.log(dictionary.indexOf(randomSolution))
+        // console.log(randomSolution)
+        // console.log(dictionary.indexOf(randomSolution))
         setSolution(randomSolution)
       
     },[])

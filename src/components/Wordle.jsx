@@ -18,7 +18,7 @@ export default function Wordle({solution}) {
           },1000)
         }
         if(isCorrect){
-          console.log('you won!!')
+          // console.log('you won!!')
           setTimeout(()=>setShowModal(true),2000)
           window.removeEventListener('keyup',handleKeyup);
         }
@@ -31,12 +31,7 @@ export default function Wordle({solution}) {
     },[handleKeyup,isCorrect,turn,isValidGuess])
   return (
     <div>
-      <div>
-        solution -- {solution}
-      </div>
-      <div>
-        current guess : {currentGuess}
-      </div>
+      
       <Grid currentGuess={currentGuess} isCorrect={isCorrect} guesses={guesses} turn={turn} />
       <Keypad usedKeys={usedKeys}/>
       {showModal && <Modal isCorrect={isCorrect} turn={turn} solution={solution} isValidGuess={isValidGuess}/>}
