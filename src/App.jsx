@@ -1,5 +1,5 @@
 import { useEffect, useState} from "react";
-import { dictionary } from "./assets/dictionary";
+import { dictionary } from "./assets/dict";
 import Wordle from "./components/Wordle";
 const App=()=> {
 
